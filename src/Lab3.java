@@ -39,31 +39,65 @@ class UserInput {
 			return false;
 	}
 
-
+//0519 레코드 활용과 모든 모드 계산 구현
 	public class Lab3 {
-
+//		static PersonData[] data = {
+//			new PersonData(23, Gender.FEMALE, 54.25, 167.75, 36.2, 85.2, 94.5, Activity.EXTRA_ACTIVE),
+//			new PersonData(74, Gender.MALE, 94.1, 177.8, 40.8, 108.5, 107.1, Activity.LIGHTLY_ACTIVE),
+//			new PersonData(34, Gender.FEMALE, 63.49, 169.07, 36.0, 83.4, 89.6, Activity.VERY_ACTIVE),
+//			new PersonData(54, Gender.MALE, 94.1, 177.8, 40.8, 108.5, 107.1, Activity.MODERATELY_ACTIVE),
+//			new PersonData(35, Gender.MALE, 57.03, 166.37, 34.0, 75.0, 89.2, Activity.EXTRA_ACTIVE),
+//			new PersonData(35, Gender.MALE, 80.38, 180.34, 38.4, 90.3, 98.7, Activity.MODERATELY_ACTIVE),
+//			new PersonData(56, Gender.FEMALE, 59.93, 161.61, 38.7, 90.3, 99.9, Activity.MODERATELY_ACTIVE),
+//			new PersonData(47, Gender.MALE, 102.83, 182.25, 41.5, 108.8, 114.4, Activity.SEDENTARY),
+//			new PersonData(69, Gender.FEMALE, 63.72, 165.72, 35.8, 79.4, 89.0, Activity.LIGHTLY_ACTIVE),
+//			new PersonData(55, Gender.MALE, 90.03, 188.59, 38.3, 96.7, 106.6, Activity.LIGHTLY_ACTIVE)
+//	};
+//
+//	static void calculate(Mode mode, PersonData person) {
+//		HealthCalculator calculator = null;
+//		switch (mode) {
+//			case BMI:
+//				calculator = new BMICalculator(person.weight(), person.height());
+//				break;
+//			case BFP:
+//				calculator = new BFPCalculator(person.gender(), person.height(), person.neck(), person.waist(), person.hip());
+//				break;
+//			case BMR:
+//				calculator = new BMRCalculator(person.age(), person.gender(), person.weight(), person.height());
+//				break;
+//			case CI:
+//				calculator = new CalorieIntakeCalculator(person.age(), person.gender(), person.weight(), person.height(), person.activity());
+//				break;
+//			default:
+//				System.out.println("default");
+//				break;
+//		}
+//		System.out.println(calculator);
+//	}
 		public static void main(String[] args) {
 
 
 			//1. foreach문을 이용해서 모든 data를 사용해서 모든 모드(BMI, BFP, BMR, CI)를 계산
 			//static void calculate(Mode mode, PersonData person)
+		System.out.println("\n foreach calculator");
 
-		class calculateAll { //1번은 구현X
+//		class calculateAll { //1번은 구현X
+//
+//			static void calculate(Mode mode, PersonData person) {
+//				//이중 for문? mode(0부터 3까지 4개의 계산)에 따라 각 PersonData
+//				//foreach구문을 제대로 이해못한거 같다.
+//				for (Mode i : mode.values()) {
+//					System.out.println(i);
+//					for (PersonData j : PersonData.data) {
+//						System.out.println(j);
+//					}
+//				}
+//			}
+//
+//		}
 
-			static void calculate(Mode mode, PersonData person) {
-				//이중 for문? mode(0부터 3까지 4개의 계산)에 따라 각 PersonData
-				//foreach구문을 제대로 이해못한거 같다.
-				for (Mode i : mode.values()) {
-					System.out.println(i);
-					for (PersonData j : PersonData.data) {
-						System.out.println(j);
-					}
-				}
-			}
-
-		}
-
-			calculateAll all = new calculateAll();
+//			calculateAll all = new calculateAll();
 			System.out.println("1번은 구현하지 못했습니다.");
 			//2. 유저입력값에 따라 계산
 			//계산법 초기값을 설정. 원래 초기값이 false라 의미없는 코드인가

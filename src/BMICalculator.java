@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class BMICalculator extends HealthCalculator {
+
+
 	// getter/setter
 		public double getWeight() {
 			return BMICalculator.weight;

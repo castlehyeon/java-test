@@ -9,6 +9,7 @@ public class CalorieIntakeCalculator extends BMRCalculator {
         this.weight = weight;
         this.age = age;
     }
+//
 
 // getter/setter
 
@@ -53,14 +54,14 @@ public class CalorieIntakeCalculator extends BMRCalculator {
     @Override
     public String toString() {
         return "당신 성별은" + gender + "이고, 이에 따른 BMR지수는" + calculate() + " 입니다.\n" +
-                "*******CalorieIntakeCalculator*******"+
+                "*******CalorieIntakeCalculator*******\n"+
                 "SEDENTARY: " + calculate() * 1.2 + "\n" +
                 "LIGHTLY_ACTIVE: " + calculate() * 1.375 + "\n" +
                 "MODERATELY_ACTIVE: " + calculate() * 1.55 + "\n" +
                 "VERY_ACTIVE: " + calculate() * 1.725 + "\n" +
                 "EXTRA_ACTIVE: "+ calculate() * 1.9;
     }//enum을 선언하고도 쓰지 않아서, 코드가 길어진다.
-
+//0517수정
     @Override
     public double calculate() {
 
